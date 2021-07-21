@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
+body {
+  background-color: #f6f5f3;
+  font-family: "Questrial", serif; }
+.App {
+  text-align: center; }
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; } }
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; }
+
+.App-link {
+  color: #61dafb; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.header {
+  background-color: white;
+  display: flex;
+  height: 75px;
+  border-bottom: 2px solid #d2d2d2;
+  justify-content: space-between;
+  padding: 0 50px; }
+  .header div {
+    position: relative; }
+    .header div img {
+      height: 50%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto; }
+      @media (max-width: 480px) {
+        .header div img {
+          height: 40%; } }
+  .header .cart-icon {
+    margin-right: 50px;
+    position: relative; }
+    .header .cart-icon .no-items {
+      display: none; }
+    .header .cart-icon .cart-bubble {
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: #d4aa63;
+      left: 20px;
+      top: 15px; }
+  @media (max-width: 767px) {
+    .header {
+      padding: 0 20px; } }
+.mattress-carousel {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  flex-wrap: wrap; }
+  .mattress-carousel .mattress-image {
+    width: 40%;
+    margin: 0 20px;
+    position: relative; }
+    .mattress-carousel .mattress-image img {
+      width: 100%;
+      height: 300px; }
+      @media (max-width: 767px) {
+        .mattress-carousel .mattress-image img {
+          height: 250px; } }
+    .mattress-carousel .mattress-image .star-rating {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 50px;
+      width: 50px; }
+      .mattress-carousel .mattress-image .star-rating img {
+        height: 50px;
+        width: 50px;
+        right: 0;
+        position: absolute; }
+      .mattress-carousel .mattress-image .star-rating span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-weight: bold;
+        font-size: smaller; }
+    @media (max-width: 991px) {
+      .mattress-carousel .mattress-image {
+        width: 90%;
+        flex-grow: 4; } }
+  .mattress-carousel .mattress-selection {
+    margin-right: 20px; }
+    .mattress-carousel .mattress-selection h1 {
+      font-family: "Source Serif Pro", serif !important;
+      margin: 0; }
+    .mattress-carousel .mattress-selection .mattress-list {
+      text-align: start; }
+      .mattress-carousel .mattress-selection .mattress-list button {
+        background: white;
+        color: #a6a19a; }
+        .mattress-carousel .mattress-selection .mattress-list button.selected {
+          background: #a6a19a;
+          color: white; }
+    .mattress-carousel .mattress-selection .mattress-options {
+      display: flex; }
+      .mattress-carousel .mattress-selection .mattress-options button {
+        flex-grow: 4;
+        height: 40px;
+        border: 1px solid; }
+    .mattress-carousel .mattress-selection .mattress-description {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0; }
+      .mattress-carousel .mattress-selection .mattress-description .mattress-name {
+        font-weight: bold; }
+    .mattress-carousel .mattress-selection .add-to-cart button {
+      background: #d4aa63;
+      width: 100%;
+      color: white;
+      border: none;
+      height: 30px;
+      cursor: pointer; }
+
+/*# sourceMappingURL=styles.css.map*/

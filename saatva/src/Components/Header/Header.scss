@@ -1,0 +1,54 @@
+$border: #d2d2d2;
+$main-button-color: #d4aa63;
+
+// Media sizes
+$MS_Upper: 480px;
+$XS_Lower: 481px;
+$XS_Upper: 767px;
+$SM_Lower: 768px;
+$SM_Upper: 991px;
+$MD_Lower: 992px;
+$MD_Upper: 1199px;
+$LG_Lower: 1200px;
+
+.header {
+  background-color: white;
+  display: flex;
+  height: 75px;
+  border-bottom: 2px solid $border;
+  justify-content: space-between;
+  padding: 0 50px;
+  div {
+    position: relative;
+    img {
+      height: 50%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      @media (max-width: $MS_Upper) {
+        height: 40%;
+      }
+    }
+  }
+  .cart-icon {
+    margin-right: 50px;
+    position: relative;
+    .no-items {
+      display: none;
+    }
+    .cart-bubble {
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: $main-button-color;
+      left: 20px;
+      top: 15px;
+    }
+  }
+
+  @media (max-width: $XS_Upper) {
+    padding: 0 20px;
+  }
+}
